@@ -16,3 +16,152 @@
 @import url('./badges.css');
 @import url('./back-link.css');
 @import url('./footer.css');
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Montserrat, sans-serif;
+  background: #fff;
+}
+
+
+.form {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  padding-top: 36px;
+  margin-bottom: 32px;
+}
+
+.form input {
+  width: 272px;
+  height: 40px;
+  padding: 8px 16px;
+
+  border: 1px solid #808080;
+  border-radius: 4px;
+  outline: none;
+}
+
+.form input:hover {
+  border-color: #000;
+}
+
+.form input:focus {
+  border-color: #808080;
+}
+
+.form button {
+  width: 95px;
+  height: 40px;
+  border: none;
+  border-radius: 8px;
+
+  background: #4e75ff;
+  color: #fff;
+  cursor: pointer;
+
+  transition: background-color 250ms ease;
+}
+
+.form button:hover {
+  background: #6c8cff;
+}
+
+
+.is-hidden {
+  display: none;
+}
+
+.loader {
+  margin: 40px auto;
+}
+
+
+.loader {
+  position: relative;
+  width: 100px;
+  height: 100px;
+}
+
+.loader:before,
+.loader:after {
+  content: '';
+  border-radius: 50%;
+  position: absolute;
+  inset: 0;
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.3) inset;
+}
+
+.loader:after {
+  box-shadow: 0 2px 0 #ff3d00 inset;
+  animation: rotate 2s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+.gallery {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto 40px;
+
+  max-width: 1128px;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+}
+
+.gallery-item {
+  width: 360px;
+  border: 1px solid #eee;
+}
+
+.gallery-link {
+  display: block;
+}
+
+.gallery-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+
+.info {
+  list-style: none;
+  padding: 8px;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.info-item {
+  font-size: 12px;
+  text-align: center;
+}
+
+.info-item b {
+  display: block;
+  font-size: 12px;
+}
+
+body {
+  display: block;
+}
